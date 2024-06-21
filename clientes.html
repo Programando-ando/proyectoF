@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cliente</title>
+    <link rel="stylesheet" href="assets/CSS/styles.css">
+    <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
+    <style>
+    h1{
+        color: white;
+    }
+    a{
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body class="text-center">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid text-center">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/LOGO.jpeg" alt="" class="d-inline-block align-text-top" width="70px" height="70px">
+          </a>
+          <h1 class="mb-4">Formulario de Cliente</h1>
+          <span class="navbar-text">
+            <button type="button" class="btn btn-warning"><a href="inicio.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+            </svg> Regresar</a></button>
+          </span>
+        </div>
+      </nav><br>
+    <form id="cliente-form">
+        <input type="hidden" id="cliente-id">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required><br><br>
+        <button type="submit" class="btn btn-success" >Guardar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+          <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+          <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+        </svg></button>
+    </form>
+    
+    <script src="assets/js/sweetalert2.all.min (1).js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

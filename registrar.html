@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/CSS/style.css">
+  <!-- Font Awesome para los íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <style>
+    .profile-photo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+    .foto-perfil {
+      height: 100px;
+    }
+  </style>
+</head>
+<body class="text-center">
+  <div id="container">
+    <img src="assets/img/LOGO.jpeg" alt="LOGO" id="foto_perfil" class="profile-photo"><br><br>
+    <h1>REGISTRARSE</h1>
+    <form id="registroForm">
+      <div class="form-group">
+        <h5>Usuario:</h5>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
+          </div>
+          <input type="text" name="nombre" id="email" class="form-control" placeholder="ejemplo@gmail.com" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <h5>Password:</h5>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+          </div>
+          <input type="password" name="ap" id="pass" class="form-control" placeholder="Password" required>
+          <div class="input-group-append">
+            <span class="input-group-text toggle-password" onclick="togglePassword()">
+              <i class="far fa-eye" id="toggleIcon"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <h5>Nombre:</h5>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+          </div>
+          <input type="text" name="usuario" id="nombre" class="form-control" placeholder="Nombre" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <h5>Apellido:</h5>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+          </div>
+          <input type="text" name="contraseña" id="ap" class="form-control" placeholder="Apellido" required>
+        </div>
+      </div><br>
+      <button type="button" class="btn btn-primary" onclick="Registrar()">Registrarse</button>
+      <a href="index.html">Iniciar sesión</a>
+    </form>
+  </div>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/sweetalert2.all.min (1).js"></script>
+  <script src="assets/js/login.js"></script>
+</body>
+</html>

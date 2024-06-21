@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="assets/css/style2.css">
+  <!-- Incluir Bootstrap y otros estilos necesarios -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <style>
+        .profile-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.foto-perfil {
+  height: 100px;
+}
+  </style>
+</head>
+<body>
+  <div class="signin">
+    <img src="assets/img/LOGO.jpeg" alt="LOGO" id="foto_perfil" class="profile-photo">
+    <h2>Iniciar Sesion</h2>
+    <div class="form">
+      <div class="inputBox">
+        <input type="text" id="email" required>
+        <i>Username</i>
+      </div>
+      <div class="inputBox">
+        <input type="password" id="pass" maxlength="17" required>
+        <i>Password</i>
+        <span class="toggle-password" onclick="togglePassword()">
+          <i class="far fa-eye" id="toggleIcon"></i>
+        </span>
+      </div>
+      <div class="links">
+        <a href="registrar.html">Forgot Password</a>
+        <a href="registrar.html">Signup</a>
+      </div>
+      <input type="submit" value="Login" id="enviar" onclick="login()">
+    </div>
+  </div>
+  <!-- Incluir scripts al final del body -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/sweetalert2.all.min (1).js"></script>
+  <script src="assets/js/login.js"></script>
+</body>
+</html>

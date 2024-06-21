@@ -1,0 +1,97 @@
+* {
+  transition: 0.3s all ease;
+}
+
+body {
+  background: #222; /* Fondo gris oscuro */
+  color: white; /* Texto blanco */
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+#container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#container h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: white; /* Texto blanco */
+}
+
+#container h5 {
+  margin-bottom: 10px;
+  color: #ccc; /* Texto gris */
+}
+
+.input-group-text {
+  background: transparent;
+  border: none;
+  color: #999; /* Texto gris */
+}
+
+.form-control {
+  background: rgba(255, 255, 255, 0.1); /* Fondo gris claro */
+  border: 1px solid #555; /* Borde gris oscuro */
+  color: white; /* Texto blanco */
+}
+
+.form-control::placeholder {
+  color: #ccc; /* Texto gris */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Azul */
+  border-color: #007bff; /* Borde azul */
+  color: white; /* Texto blanco */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+  border-color: #0056b3; /* Borde azul más oscuro al pasar el mouse */
+}
+
+.btn-outline-secondary {
+  color: #6c757d; /* Texto gris */
+  border-color: #6c757d; /* Borde gris */
+}
+
+.btn-outline-secondary:hover {
+  color: #495057; /* Texto gris más oscuro al pasar el mouse */
+  border-color: #495057; /* Borde gris más oscuro al pasar el mouse */
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilos adicionales para el botón de mostrar contraseña */
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.toggle-password i {
+  color: #999; /* Color del ícono gris */
+}
+
+/* Estilos para el ícono de contraseña visible */
+.toggle-password.active i {
+  color: #007bff; /* Color azul cuando la contraseña es visible */
+}

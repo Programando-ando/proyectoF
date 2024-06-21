@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salones</title>
+    <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
+    <style>
+        #bienvenida {
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            max-height: 600px; /* Puedes ajustar esta altura máxima según tus necesidades */
+            object-fit: contain; /* Esto asegurará que la imagen se ajuste al contenedor sin recortarse */
+        }
+        .carousel-inner {
+            height: 600px; /* Ajusta esta altura según tus necesidades */
+        }
+
+        h5,p{
+          font-size: 20px;
+          color: white;
+        }
+    </style>
+</head>
+<body class="text-center">
+    <nav class="navbar bg-warning">
+        <div class="container">
+            <img src="assets/img/LOGO.jpeg" alt="" class="d-inline-block align-text-top" width="70px" height="70px">
+            <span class="navbar-brand m-auto h1">
+                <h1 id="bienvenida">SALONES DISPONIBLES</h1>
+            </span>
+            <a href="inicio.html" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+            </svg> Regresar</a><br>
+        </div>
+    </nav><br>
+
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/salon1.jpeg" class="d-block w-100" alt="salon1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Salon "El jardin"</h5>
+              <p>Bonito salon al aire libre, ideal para disfrutar la naturaleza.</p>
+              <p>Costo: $5000</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/salon2.webp" class="d-block w-100" alt="salon2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Salon "Formal"</h5>
+              <p>Este salon es ideal para eventos mas privados y de indole privado.</p>
+              <p>Costo: $6000</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/salon3.jpg" class="d-block w-100" alt="salon3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Salon "Elegante"</h5>
+              <p>Este salon es ideal para eventos mas privados, esta localizado en una zona de alto nivel.</p>
+              <p>Costo: $6500</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/salon4.jpeg" class="d-block w-100" alt="Salon4">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Salon "Conferencia"</h5>
+              <p>Este salon de llama asi por tener parecido a los teatros o auditorios donde se dan conferencias.</p>
+              <p>Costo: $4500</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/salon5.webp" class="d-block w-100" alt="Salon5">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Salon "Juvenil"</h5>
+              <p>Este salon es mas para eventos juveniles por las instalaciones que son con las que mas se identifican los jovenes
+                hoy en dia
+              </p>
+              <p>Costo: $6000</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div><br>
+
+      <h2>Complementos</h2>
+      <table class="table table-striped table-hover w-50 m-auto">
+        <tr>
+          <td>Nombre</td>
+          <td>Descripción</td>
+          <td>Precio</td>
+        </tr>
+        <tr>
+          <td>Mesas</td>
+          <td>1 mesa</td>
+          <td>$50</td>
+        </tr>
+        <tr>
+          <td>Sillas</td>
+          <td>10 silla</td>
+          <td>$70</td>
+        </tr>
+        <tr>
+          <td>Lona</td>
+          <td>50mx50m</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <td>Adorno</td>
+          <td>Globos, lluvias, letras, serpentina, centro de mesa, flores</td>
+          <td>$900</td>
+        </tr>
+        <tr>
+          <td>Adorno</td>
+          <td>Globos, lluvias, letras, serpentina</td>
+          <td>$450</td>
+        </tr>
+        <tr>
+          <td>Fundas</td>
+          <td>Funda para mesas y sillas</td>
+          <td>$300</td>
+        </tr>
+      </table><br>
+
+      <h2>Servicios</h2>
+      <table class="table table-dark table-striped-columns w-50 m-auto">
+        <tr>
+          <td>Nombre</td>
+          <td>Descripción</td>
+          <td>Precio</td>
+        </tr>
+        <tr>
+          <td>Comida</td>
+          <td>Carnitas para 100</td>
+          <td>$4000</td>
+        </tr>
+        <tr>
+          <td>Comida</td>
+          <td>Banquete para 100 personas</td>
+          <td>$7000</td>
+        </tr>
+        <tr>
+          <td>Meseros</td>
+          <td>5 meseros</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <td>Animador</td>
+          <td>Animador para un show de 3 horas</td>
+          <td>$2000</td>
+        </tr>
+        <tr>
+          <td>Payaso</td>
+          <td>Show infantil, entretenimiento, bulgar</td>
+          <td>$1500</td>
+        </tr>
+        <tr>
+          <td>Fotografo</td>
+          <td>Grabacion del evento, fotografias ilimitadas por 6 horas</td>
+          <td>$9000 hrs extra: $1000</td>
+        </tr>
+        <tr>
+          <td>Mariachi</td>
+          <td>Por hora</td>
+          <td>$3500</td>
+        </tr>
+        <tr>
+          <td>Video booth</td>
+          <td>Para tus mejores videos con amigos</td>
+          <td>$2500</td>
+        </tr>
+        <tr>
+          <td>Letras iluminadas</td>
+          <td>Dependiendo del diseño se cobra por letra</td>
+          <td>$200</td>
+        </tr>
+
+      </table>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
